@@ -1,5 +1,5 @@
 # sd-webui-rvc
-### This is test version, you are completely responsible for using this.
+### This is test version, you are completely responsible for using this. This is own risk.
 [TEST] This extension is the adaptation of RVC / UVR / VoiceFixer for [AUTOMATIC1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ![Preview](doc/img.png)
@@ -11,6 +11,10 @@ nVidia GPU
 "--disable-safe-unpickle" parameter is needed for loading hubert model.(Add to webui-user.bat/webui-user.sh)
 
 Cuda Toolkit - (Tested with 11.6, Maybe it's not necessary)
+
+#### For Linux
+ You need wget & ffmpeg & ffprobe.
+ This project optimized on windows, I have no idea about results.
 
 ## Installation
 
@@ -35,5 +39,8 @@ Click "Install" button.
 [haoheliu/voicefixer](https://github.com/haoheliu/voicefixer)
 
 [Anjok07&aufr33/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui)
+
+### Tools
+FFMpeg & wget
 
 Some Colabs but I forgot which ones. Sory about that.
