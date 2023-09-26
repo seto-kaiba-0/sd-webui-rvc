@@ -75,7 +75,7 @@ def id_to_ptm(mkey):
         if not os.path.exists(mpath):
             print('Downloading model...',end=' ')
             subprocess.run(
-                ["wget", _Models+mkey, "-O", mpath]
+                ["wget", files_d._Models+mkey, "-O", mpath]
             )
             print(f'saved to {mpath}')
             # get_ipython().system(f'gdown {model_id} -O /content/tmp_models/{mkey}')
