@@ -1,6 +1,7 @@
 # sd-webui-rvc
 ### This is test version, you are completely responsible for using this. This is your own risk.
-[TEST] This extension is the adaptation of RVC / UVR / VoiceFixer for [AUTOMATIC1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+This extension is the adaptation of RVC / UVR / VoiceFixer for [AUTOMATIC1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ![Preview](doc/img.png)
 
@@ -13,8 +14,9 @@ nVidia GPU
 Cuda Toolkit - (Tested with 11.6, Maybe it's not necessary)
 
 #### For Linux
- You need wget & ffmpeg & ffprobe.
- This project optimized on windows, I have no idea about results.
+ You need to install wget & ffmpeg & ffprobe.
+ 
+ This project is optimized on windows, I have no idea about results.
 
 ## Installation
 
@@ -36,11 +38,16 @@ Click "Install" button.
 ## Credits
 [RVC-Project/Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 
+[Mangio621/Mangio-RVC-Fork](https://github.com/Mangio621/Mangio-RVC-Fork)
+
 [haoheliu/voicefixer](https://github.com/haoheliu/voicefixer)
 
 [Anjok07&aufr33/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui)
 
+And Some Colabs but I forgot and dont find which ones. Sory about that.
+
+
 ### Tools
 FFMpeg & wget
 
-Some Colabs but I forgot which ones. Sory about that.
+
