@@ -1,5 +1,5 @@
 # sd-webui-rvc
-### This is test version, you are completely responsible for using this. This is own risk.
+### This is test version, you are completely responsible for using this. This is your own risk.
 [TEST] This extension is the adaptation of RVC / UVR / VoiceFixer for [AUTOMATIC1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 ![Preview](doc/img.png)
