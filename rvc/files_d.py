@@ -5,7 +5,7 @@ _Models = "https://" + "github.com/TRvlvr/model_repo/releases/download/all_publi
 _uvr_base = "https://" + "huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/"
 Model_UVR5 = ["HP2_all_vocals.pth", "HP3_all_vocals.pth", "HP5_only_main_vocal.pth", "VR-DeEchoAggressive.pth", "VR-DeEchoDeReverb.pth", "VR-DeEchoNormal.pth"]
 
-_t_base = "https://" + "huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained_v0/"
+_t_base = "https://" + "huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained/"
 _t_base_v2 = "https://" + "huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained_v2/"
 pretrained_md = ["D32k.pth", "D40k.pth", "D48k.pth", "f0D32k.pth", "f0D40k.pth", "f0D48k.pth", "f0G32k.pth", "f0G40k.pth", "f0G48k.pth", "G32k.pth", "G40k.pth", "G48k.pth"]
 
