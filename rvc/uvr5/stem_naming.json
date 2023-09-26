@@ -1,0 +1,7 @@
+{
+    "Vocals": "Instrumental",
+    "Other": "Instruments",
+    "Instrumental": "Vocals",
+    "Drums": "Drumless",
+    "Bass": "Bassless"
+}
