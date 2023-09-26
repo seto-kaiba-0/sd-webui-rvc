@@ -47,6 +47,9 @@ d_checks = f"{now_dir}/uvr5/download_checks.json"
 if not os.path.exists(d_checks):
     import urllib.request
     model_ids = json.load(urllib.request.urlopen(files_d._mdx_downcheck))
+    subprocess.run(
+            ["wget", files_d._mdx_downcheck, "-O", d_checks]
+        )
 else:
     with open(d_checks) as fp:
         model_ids = json.load(fp)
