@@ -40,11 +40,13 @@ Click "Install" button.
 
 [Mangio621/Mangio-RVC-Fork](https://github.com/Mangio621/Mangio-RVC-Fork)
 
+[(EasyGUI)777gt/-EVC-](https://github.com/777gt/-EVC-)
+
 [haoheliu/voicefixer](https://github.com/haoheliu/voicefixer)
 
 [Anjok07&aufr33/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui)
 
-And Some Colabs but I forgot and dont find which ones. Sory about that.
+
 
 
 ### Tools
