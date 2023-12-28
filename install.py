@@ -8,19 +8,18 @@ req = [
     ["pyworld","pyworld>=0.3.2"],
     ["faiss","faiss-cpu==1.7.3"],
     ["ffmpeg","ffmpeg-python>=0.2.0"],
+    ["torchaudio","torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118"],
     ["fairseq","fairseq==0.12.2"],
     ["soundfile","soundfile>=0.12.1"],
     ["gtts","gtts==2.3.2"],
     ["pydub","pydub>=0.25.1"],
     ["numpy","numpy>=1.23.5"],
     ["scipy","scipy>=1.9.3"],
-    ["librosa","librosa>=0.9.1"],
-    ["pyworld","pyworld>=0.3.2"],
     ["tqdm","tqdm>=4.63.1"],
     ["tensorboardX","tensorboardX"],
     ["onnxruntime","onnxruntime"],
     ["onnxruntime_gpu","onnxruntime_gpu==1.15.1"],
-    ["voicefixer","voicefixer==0.1.2"],
+    ["voicefixer","voicefixer==0.1.3"],
 ]
 
 for lib in req:
@@ -31,18 +30,29 @@ for lib in req:
             f"install {lib_ins}",
             f"sd-webui-rvc requirement: {lib_name}")
 
-package_name = "omegaconf"
-package_version = "2.2.0"
-if not launch.is_installed(package_name):
-            launch.run_pip(
-                f"install {package_name}",
-                f"sd-webui-rvc requirement: {package_name}")
+
+req_vers = [
+    ["librosa", "0.9.1", "librosa==0.9.1"],
+    ["hydra-core", "1.2.0.dev2", "hydra-core==1.2.0.dev2"],
+    ["antlr4-python3-runtime", "4.8", "antlr4-python3-runtime==4.8"],
+    ["omegaconf", "2.2.0", "omegaconf==2.2.3"],
+]
+
 import pkg_resources
-version = pkg_resources.get_distribution(package_name).version
-if(version != package_version):
-    print(f'{package_name} version: {version} will update to version: {package_version}')
-    launch.run_pip(f"install {package_name}=={package_version}", "update requirements for RVC")
-    
+for lib in req_vers:
+    lib_name = lib[0]
+    lib_vers = lib[1]
+    lib_ins = lib[2]
+    if not launch.is_installed(lib_name):
+        launch.run_pip(
+            f"install {lib_ins}",
+            f"sd-webui-rvc requirement: {lib_name}")
+    else:
+        version = pkg_resources.get_distribution(lib_name).version
+        if(version != lib_vers):
+            print(f'{lib_name} version: {version} will update to version: {lib_vers}')
+            launch.run_pip(f"install {lib_ins}", "update requirements for RVC")
+
 
 t_name = "triton"
 if not launch.is_installed(t_name):
