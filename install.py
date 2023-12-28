@@ -1,10 +1,11 @@
 import launch
 import os
 import sys
-
+#tensorboardX == 2.6.2.2
+#onnxruntime == 1.16.3
 req = [
     ["parselmouth","praat-parselmouth>=0.4.2"],
-    ["torchcrepe","torchcrepe==0.0.20"],
+    ["torchcrepe","torchcrepe==0.0.15"],
     ["pyworld","pyworld>=0.3.2"],
     ["faiss","faiss-cpu==1.7.3"],
     ["ffmpeg","ffmpeg-python>=0.2.0"],
@@ -19,7 +20,7 @@ req = [
     ["tensorboardX","tensorboardX"],
     ["onnxruntime","onnxruntime"],
     ["onnxruntime_gpu","onnxruntime_gpu==1.15.1"],
-    ["voicefixer","voicefixer==0.1.3"],
+    ["voicefixer","voicefixer==0.1.2"],
 ]
 
 for lib in req:
@@ -32,10 +33,10 @@ for lib in req:
 
 
 req_vers = [
-    ["librosa", "0.9.1", "librosa==0.9.1"],
+    ["librosa", "0.8.1", "librosa==0.8.1"],
     ["hydra-core", "1.2.0.dev2", "hydra-core==1.2.0.dev2"],
     ["antlr4-python3-runtime", "4.8", "antlr4-python3-runtime==4.8"],
-    ["omegaconf", "2.2.0", "omegaconf==2.2.3"],
+    ["omegaconf", "2.2.0", "omegaconf==2.2.0"],
 ]
 
 import pkg_resources
